@@ -1,4 +1,3 @@
-cd APOOL
 export PORT=5000
 unset PIP_USER
 
@@ -9,9 +8,10 @@ fi
 
 source venv/bin/activate
 
-if [-f "requirements.txt"]; then
+if [ -f "requirements.txt" ]; then
   echo "Checks..."
   pip instlal -r requirements.txt || echo "Failed instakk requirements.txt"
+fi
 
 echo "Starting application"
 python main.py

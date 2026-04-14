@@ -2,7 +2,7 @@ cd APOOL
 export PORT=5000
 unset PIP_USER
 
-if [! - d "venv"]; then
+if [ ! -d "venv" ]; then
   echo "Creating virtual environment..."
   python3 -m venv venv --system-site-packages
 fi

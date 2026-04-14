@@ -6,8 +6,8 @@ expertMode = true
 channel = "stable-25_05"
 
 [deployment]
-run = ["gunicorn", "--bind=0.0.0.0:5000", "--reuse-port", "main:app"]
-deploymentTarget = "autoscale"
+run = ["sh", "-c", "bash ./APOOL/start.sh"]
+deploymentTarget = "cloudrun"
 
 [workflows]
 runButton = "Project"

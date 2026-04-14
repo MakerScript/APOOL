@@ -1,4 +1,4 @@
-cd C:\Users\kostenkoys\PycharmProjects\APOOL
+cd APOOL
 export PORT=5000
 unset PIP_USER
 
